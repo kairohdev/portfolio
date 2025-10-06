@@ -5,7 +5,7 @@
  .  *  move your mouse to over the stars   .
  *  .  .   change these values:   .  *
    .      * .        .          * .       */
-const STAR_COLOR = '#ff64b4';
+const STAR_COLOR = '#ff59ca';
 const STAR_SIZE = 2;
 const STAR_MIN_SCALE = 0.1;
 const OVERFLOW_THRESHOLD = 40;
