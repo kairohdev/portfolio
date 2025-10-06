@@ -5,17 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>kairoh</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.24/fullpage.min.js"></script>
-    <script src="https://unpkg.com/cursor-effects@latest/dist/browser.js"></script>
-    <script>
-      window.addEventListener('load', () => {
-        // Example A: Fairy dust
-        new cursoreffects.fairyDustCursor({
-          colors: ["#ff00ae", "#ff00ae", "#ff00ae"],
-          fairySymbol: "★"
-        });
-     });
-    </script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.24/fullpage.min.css" />
+    <link rel="stylesheet" href="assets/bg/background.css">
     <link href="src/output.css" rel="stylesheet">
     <style>
       #fullpage .section:first-child,
@@ -34,9 +25,10 @@
     </style>
   </head>
   <body class="bg-black text-[#ff00ae] font-mono">
+    <canvas id="bgcanvas" class="absolute inset-0 w-full h-full"></canvas>
     <div id="fullpage">
       <div class="overflow-visible pb-6 text-center animate-in fade-in flex flex-col items-center justify-center h-screen">
-
+        <div class="bg-black/75 rounded-3xl p-14 backdrop-blur-sm">
         <h1 class="text-6xl md:text-8xl font-bold tracking-tight border-pink-500 text-black"
         style="text-shadow: 0 0 10px #ff00ae, 0 0 13px #ff00ae, 0 0 20px #ff00ae;">
         <span class="hover:text-[#ff00ae] transition duration-700 ease-in-out">kairoh</span>  
@@ -107,6 +99,7 @@
         
         
     </div>
+  </div>
 <script>
   const btn = document.getElementById('discordBtn');
   const popup = document.getElementById('discordPopup');
@@ -140,6 +133,7 @@
     });
   }
 </script>
+<script src="assets/bg/background.js"></script>
 
     <!-- <script type="text/javascript">
     var myFullpage = new fullpage('#fullpage', {
