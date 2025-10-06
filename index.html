@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>kairoh</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.24/fullpage.min.js"></script>
+    <script src="https://unpkg.com/cursor-effects@latest/dist/browser.js"></script>
+    <script>
+      window.addEventListener('load', () => {
+        // Example A: Fairy dust
+        new cursoreffects.fairyDustCursor({
+          colors: ["#ff00ae", "#ff00ae", "#ff00ae"],
+          fairySymbol: "★"
+        });
+     });
+    </script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.24/fullpage.min.css" />
     <link href="src/output.css" rel="stylesheet">
     <style>
@@ -13,7 +23,7 @@
         overflow: visible !important;
       }
       @keyframes tw-fade-in { from { opacity: 0 } to { opacity: 1 } }
-      .animate-in.fade-in { animation: tw-fade-in 1300ms ease-out both; }
+      .animate-in.fade-in { animation: tw-fade-in 2000ms ease-out both; }
       #fullpage .section:first-child,
       #fullpage .section:first-child .fp-overflow,
       #fullpage .section:first-child .fp-tableCell,
@@ -34,8 +44,8 @@
         <p class="italic mt-0.5 text-[#ff00ae]">
           (kye-row)
         </p>
-        <p class="mt-0.5 text-[#ff00ae]">
-          insert random inspirational quote here
+        <p class="mt-0.5 font-bold text-[#ff00ae]">
+          3d modeler & programmer
         </p>
 
         <div class="mt-4 isolate inline-flex items-center gap-3">
@@ -82,16 +92,21 @@
           </svg>
         </a>
 
-        <a href="https://x.com/Kairoh3D" target="_blank" rel="noopener"
+        <a href="https://www.roblox.com/users/314561170/profile" target="_blank" rel="noopener"
           class="inline-flex items-center justify-center relative z-0 rounded-full border border-pink-500 p-2 hover:scale-110 transition duration-200 ease-in-out"
           style="box-shadow: 0 0 5px #ff00aedf, 0 0 10px #ff00aedf, 0 0 20px #ff00aedf;">
-          <svg viewBox="0 0 48 48" fill="currentColor" class="h-5 w-5 md:h-6 md:w-6 text-[#ff00ae] opacity-90 hover:opacity-100 transition duration-200 ease-in-out">
-            <path d="M36.6526 3.8078H43.3995L28.6594 20.6548L46 43.5797H32.4225L21.7881 29.6759L9.61989 43.5797H2.86886L18.6349 25.56L2 3.8078H15.9222L25.5348 16.5165L36.6526 3.8078ZM34.2846 39.5414H38.0232L13.8908 7.63406H9.87892L34.2846 39.5414Z"/>
-          </svg>
+          <img src="assets/images/rbx.png" class="h-5 w-5 md:h-6 md:w-6">
         </a>
+
+        <a href="https://steamcommunity.com/id/mekaiii/" target="_blank" rel="noopener"
+          class="inline-flex items-center justify-center relative z-0 rounded-full border border-pink-500 p-2 hover:scale-110 transition duration-200 ease-in-out"
+          style="box-shadow: 0 0 5px #ff00aedf, 0 0 10px #ff00aedf, 0 0 20px #ff00aedf;">
+          <img src="assets/images/steam.png" class="h-5 w-5 md:h-6 md:w-6">
+        </a>
+
+        
         
     </div>
-
 <script>
   const btn = document.getElementById('discordBtn');
   const popup = document.getElementById('discordPopup');
@@ -126,20 +141,19 @@
   }
 </script>
 </div>
-      <div class="section">Section 2</div>
-      <div class="section">Section 3</div>
+      <div class="section text-center">coming soon >:D</div>
     </div>
 
     <script type="text/javascript">
     var myFullpage = new fullpage('#fullpage', {
         navigation: true,
-        navigationTooltips: ['home', 'about me', 'projects'],
+        navigationTooltips: ['', '', ''],
         // Navigation for horizontal slides
         slidesNavigation: true,
         slidesNavPosition: 'bottom', // Default
 
         controlArrows: false,
-        licenseKey: 'u thought'
+        licenseKey: 'GNY27-36R48-3HHIJ-693M9-KULZP'
     });
     </script>
   </body>
